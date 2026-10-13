@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+div{
+    position: relative;
+}
+#car{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+img{
+    width: 300px;
+    display: block;
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: #8b0000;
+    position: relative;
+    border-radius: 50px;
+    /* animation: move 5s; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 350px auto 0 auto;
+
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+        background-color: #8b0000;
+    }
+
+    50% {
+        transform: translateX(200px); 
+        background-color: #ffffe0;
+    }
+
+    100%{
+        transform: translateX(0);
+        background-color: #8b0000;
+    }
+    
+}

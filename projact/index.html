@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Еко-Світ — Інновації для майбутнього</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Підключення сучасного шрифту Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Фіксована сучасна шапка -->
+    <header class="navbar"> 
+        <div class="logo">
+            <span class="logo-icon">🌱</span>
+            <span class="logo-text">Еко<span class="highlight">Світ</span></span>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про проєкт</a></li>
+                <li><a href="#tips">Поради</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="accessibility-controls">
+            <button id="themeToggleBtn" class="btn-control" aria-label="Змінити тему">
+                <span class="btn-icon">🌙</span> <span class="btn-text">Тема</span>
+            </button>
+            <button id="fontToggleBtn" class="btn-control" aria-label="Збільшити шрифт">
+                <span class="btn-icon">🔍</span> <span class="btn-text">Шрифт +</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="home"> 
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Ecology & Sustainability</span>
+                <h1>Творимо чисте майбутнє разом</h1>
+                <p>Прості щоденні рішення, які змінюють екологію нашої планети на краще. Долучайтесь до свідомого споживання вже сьогодні.</p>
+                <div class="hero-actions">
+                    <a href="#tips" class="btn-primary">Переглянути поради</a>
+                    <a href="#contact" class="btn-secondary">Зв'язатися з нами</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Про проєкт -->
+        <section id="about" class="content-section">
+            <div class="section-header">
+                <h2>Наша місія</h2>
+                <p>Доступність, екологічність та інклюзивність для кожного</p>
+            </div>
+            <article class="card feature-card">
+                <div class="card-icon">🎯</div>
+                <h3>Чому це важливо?</h3>
+                <p>Ми створюємо платформу, адаптовану для користувачів з різними потребами, включаючи людей з інклюзіями зору. Поєднання високої контрастності, чіткої типографіки та сучасного дизайну робить екологічні знання доступними для всіх.</p>
+            </article>
+        </section>
+
+        <!-- Поради -->
+        <section id="tips" class="content-section">
+            <div class="section-header">
+                <h2>Корисні еко-звички</h2>
+                <p>Невеликі кроки з великим впливом</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-icon">♻️</div>
+                    <h3>Сортування сміття</h3>
+                    <p>Відокремлюйте пластик, папір, скло та органічні відходи для вторинної переробки.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🛍️</div>
+                    <h3>Відмова від пластику</h3>
+                    <p>Обирайте багаторазові еко-торбинки, багаторазові пляшки та скляний контейнери.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">💡</div>
+                    <h3>Енергоефективність</h3>
+                    <p>Використовуйте LED-освітлення та вимикайте електроприлади з мережі.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Контакти -->
+        <section id="contact" class="content-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Зв'яжіться з нами</h2>
+                    <p>Маєте запитання або пропозиції? Заповніть форму, і ми обов'язково відповімо.</p>
+                    <div class="contact-details">
+                        <p>📍 <strong>Локація:</strong> Одеса, Україна</p>
+                        <p>✉️ <strong>Email:</strong> info@ecoworld.ua</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="mainContactForm">
+                    <div class="form-group">
+                        <label for="username">Ваше ім'я</label>
+                        <input type="text" id="username" placeholder="Олексій" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="useremail">Електронна пошта</label>
+                        <input type="email" id="useremail" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="usermessage">Повідомлення</label>
+                        <textarea id="usermessage" rows="4" placeholder="Ваше повідомлення..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Надіслати повідомлення</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">🌱 Еко<span class="highlight">Світ</span></span>
+                <p>Платформа свідомого споживання</p>
+            </div>
+            <nav>
+                <ul class="footer-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про проєкт</a></li>
+                    <li><a href="#tips">Поради</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ЕкоСвіт. Усі права захищено. | #EcoWorld2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
